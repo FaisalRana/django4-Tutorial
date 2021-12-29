@@ -6,4 +6,5 @@ from django.db import models
 class Meetup(models.Model):
     title = models.CharField(max_length=200) # text is expected in a database table 
     slug = models.SlugField(unique=True) # verifies that duplicate slugs DNE
+    # email = models.EmailField(max_length=200)
     description = models.TextField()

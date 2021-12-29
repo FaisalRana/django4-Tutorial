@@ -13,7 +13,11 @@
   <h1> It works </h1>
   <p> Doesnt it?</p>
 {% if show_meetups %}
-  <h2>{{ meetups.0.title }}</h2>
+{% for meetup in meetups %}
+  <h2>{{ meetup.title }}</h2>
+  <p>{{ meetup.description }}</p>
+  <p>{{ meetup.slug }}</p>
+{% endfor %}
 {% else %}
   <h2>No meetups found!</h2>
 {% endif %}

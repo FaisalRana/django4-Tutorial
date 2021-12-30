@@ -84,13 +84,24 @@ WSGI_APPLICATION = 'django_tutorial.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'codekeen',
+        'NAME': 'laysifDB',
         'USER': 'admin',
         'PASSWORD': 'command123',
-        'HOST': 'mysql-database.c0eeq79ih0yi.us-west-2.rds.amazonaws.com',
+        'HOST': 'laysifdb.c0eeq79ih0yi.us-west-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'djangotest',
+#         'USER': 'root',
+#         'PASSWORD': 'epicodus',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
